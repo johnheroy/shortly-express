@@ -58,7 +58,7 @@ function(req, res) {
 app.get('/logout',
 function(req,res){
   req.session.destroy();
-  res.redirect('/')
+  res.redirect('/');
 });
 
 app.post('/links',
